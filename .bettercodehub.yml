@@ -1,0 +1,50 @@
+component_depth: 2
+exclude:
+- ".*/data-provider-api-develop/landingzone/src/main/resources/static/css/bootstrap[.]min[.]css"
+- ".*/.git/.*"
+- ".*/.idea/.*"
+- ".*/.settings/.*"
+- ".*/.gradle/.*"
+- ".*/forge/.*"
+- ".*/ops/aws/inventory/.*"
+languages:
+- name: "Python"
+  production:
+  test:
+- name: "Angularjstemplate"
+  production:
+    include:
+    - ".*/data-provider-api-develop/data-provider-questionnaire/.*[.]html"
+    exclude:
+    - ".*/data-provider-api-develop/landingzone/.*[.]html"
+- name: "Css"
+  production:
+  generated:
+- name: "Docker"
+  production:
+- name: "Java"
+  production:
+    exclude: 
+    - ".*/data-provider-api-develop/e2e/.*[.]java"
+  test:
+    include:
+    - ".*/data-provider-api-develop/e2e/.*[.]java"
+- name: "Sass"
+  production:
+- name: "Script"
+  production:
+- name: "Typescript"
+  production:
+    exclude:
+    - ".*/data-provider-api-develop/webdriver/.*[.]ts"
+  test:
+    include:
+    - ".*/data-provider-api-develop/webdriver/.*[.]ts"
+- name: "Yaml"
+  production:
+- name: "Thymeleaf"
+  production:
+    include:
+    - ".*/data-provider-api-develop/landingzone/.*[.]html"
+    exclude:
+    - ".*/data-provider-api-develop/data-provider-questionnaire/.*[.]html"
